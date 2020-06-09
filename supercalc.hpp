@@ -250,15 +250,6 @@ private:
     int n{}, m{};
 public:
     SuperCalc(int n, int m) {
-        /*if (n == m && n == 5) {
-            for (int q = 0; q < n; ++q) {
-                for (int w = q; w < q + m; ++w) {
-                    std::cout << w << ' ';
-                }
-                std::cout << '\n';
-            }
-            exit(0);
-        }*/
         data = std::unique_ptr<Cell<T>[]>(new Cell<T>[n * m]);
         this->n = n;
         this->m = m;
